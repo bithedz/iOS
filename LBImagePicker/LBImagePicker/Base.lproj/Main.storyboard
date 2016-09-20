@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LBImagePicker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCv-6W-2aW">
+                                <rect key="frame" x="20" y="90" width="280" height="299"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPC-jP-6Qj">
+                                <rect key="frame" x="20" y="444" width="135" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="Mwe-dR-BmF"/>
+                                </constraints>
+                                <state key="normal" title="Open Library"/>
+                                <connections>
+                                    <action selector="takeFromLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZMk-6r-bdj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tO7-wC-AlL">
+                                <rect key="frame" x="165" y="444" width="135" height="30"/>
+                                <state key="normal" title="Take a Photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RB0-Cj-xzx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bCv-6W-2aW" firstAttribute="trailing" secondItem="tO7-wC-AlL" secondAttribute="trailing" id="2lT-cq-dcH"/>
+                            <constraint firstItem="bCv-6W-2aW" firstAttribute="leading" secondItem="sPC-jP-6Qj" secondAttribute="leading" id="9bn-BX-rJC"/>
+                            <constraint firstItem="tO7-wC-AlL" firstAttribute="leading" secondItem="sPC-jP-6Qj" secondAttribute="trailing" constant="10" id="Lwf-0C-R3W"/>
+                            <constraint firstItem="sPC-jP-6Qj" firstAttribute="top" secondItem="bCv-6W-2aW" secondAttribute="bottom" constant="55" id="Qa0-Ew-rhi"/>
+                            <constraint firstItem="bCv-6W-2aW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="acH-Pt-fPv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sPC-jP-6Qj" secondAttribute="bottom" constant="94" id="ega-aV-6SK"/>
+                            <constraint firstItem="bCv-6W-2aW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="ktQ-wb-PHT"/>
+                            <constraint firstItem="sPC-jP-6Qj" firstAttribute="baseline" secondItem="tO7-wC-AlL" secondAttribute="baseline" id="l9S-GC-UVL"/>
+                            <constraint firstItem="bCv-6W-2aW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lwb-MK-Sjg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imagePicked" destination="bCv-6W-2aW" id="8Es-1m-dpH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="162" y="347"/>
         </scene>
     </scenes>
 </document>
