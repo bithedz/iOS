@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  LBImagePicker
 //
-//  Created by Wira on 9/20/16.
+//  Created by Wira on 9/28/16.
 //  Copyright © 2016 Wira. All rights reserved.
 //
 

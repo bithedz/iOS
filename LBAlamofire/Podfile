@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+use_frameworks!
+
+target 'LBAlamofire' do
+pod 'Alamofire', '~> 3.4.0'
+pod 'AlamofireImage', '~> 2.4.0'
+end
+
+target 'LBAlamofireTests' do
+
+end
+
+target 'LBAlamofireUITests' do
+
+end
+

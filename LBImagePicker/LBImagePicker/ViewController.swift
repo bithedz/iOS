@@ -2,16 +2,16 @@
 //  ViewController.swift
 //  LBImagePicker
 //
-//  Created by Wira on 9/20/16.
+//  Created by Wira on 9/28/16.
 //  Copyright © 2016 Wira. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    @IBOutlet weak var imagePicked: UIImageView!
 
+    @IBOutlet weak var imagePreview: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,7 +21,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func takePhoto(sender: AnyObject) {
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
@@ -32,8 +32,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.presentViewController(imagePicker, animated: true, completion: nil)
         }
     }
-
-    @IBAction func takeFromLibrary(sender: AnyObject) {
+    
+    
+    @IBAction func chooseGallery(sender: AnyObject) {
         
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
             let imagePicker = UIImagePickerController()
@@ -45,9 +46,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-        imagePicked.image = image
-        self.dismissViewControllerAnimated(true, completion: nil);
+        imagePreview.image = image
+        
+        dismissViewControllerAnimated(true, completion: nil)
+//        self.dismissViewControllerAnimated(true, completion: nil);
     }
 
+    @IBAction func saveImage(sender: AnyObject) {
+        
+        let imageData = UIImageJPEGRepresentation(imagePreview.image!, 0.6)
+        let compressedJPGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        
+        let alert = UIAlertView(title: "Wow",
+                                message: "Your image has been saved to Photo Library!",
+                                delegate: nil,
+                                cancelButtonTitle: "Ok")
+        alert.show()
+    }
+    
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+   
 }
 

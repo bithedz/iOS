@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53EE350B1D9115250032C020"
+               BlueprintIdentifier = "5389CD3D1D9BA2AA00B1146B"
                BuildableName = "LBImagePicker.app"
                BlueprintName = "LBImagePicker"
                ReferencedContainer = "container:LBImagePicker.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53EE351F1D9115250032C020"
+               BlueprintIdentifier = "5389CD511D9BA2AB00B1146B"
                BuildableName = "LBImagePickerTests.xctest"
                BlueprintName = "LBImagePickerTests"
                ReferencedContainer = "container:LBImagePicker.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53EE352A1D9115250032C020"
+               BlueprintIdentifier = "5389CD5C1D9BA2AB00B1146B"
                BuildableName = "LBImagePickerUITests.xctest"
                BlueprintName = "LBImagePickerUITests"
                ReferencedContainer = "container:LBImagePicker.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53EE350B1D9115250032C020"
+            BlueprintIdentifier = "5389CD3D1D9BA2AA00B1146B"
             BuildableName = "LBImagePicker.app"
             BlueprintName = "LBImagePicker"
             ReferencedContainer = "container:LBImagePicker.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53EE350B1D9115250032C020"
+            BlueprintIdentifier = "5389CD3D1D9BA2AA00B1146B"
             BuildableName = "LBImagePicker.app"
             BlueprintName = "LBImagePicker"
             ReferencedContainer = "container:LBImagePicker.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53EE350B1D9115250032C020"
+            BlueprintIdentifier = "5389CD3D1D9BA2AA00B1146B"
             BuildableName = "LBImagePicker.app"
             BlueprintName = "LBImagePicker"
             ReferencedContainer = "container:LBImagePicker.xcodeproj">
