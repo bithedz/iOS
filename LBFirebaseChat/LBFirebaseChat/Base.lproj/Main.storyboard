@@ -18,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vo7-Np-l1Y">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Chat"/>
+                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                                <state key="normal" title="Let's Chat"/>
                                 <connections>
                                     <action selector="startChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8a-JA-zoc"/>
                                 </connections>
@@ -33,7 +33,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="347.89999999999998"/>
+            <point key="canvasLocation" x="162" y="347"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="0Ou-1L-URn">
