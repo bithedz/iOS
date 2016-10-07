@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         let chatVc = navVc.viewControllers.first as! ChatViewController
         chatVc.senderId = "wira"
         chatVc.senderDisplayName = ""
+        
     }
 
 }

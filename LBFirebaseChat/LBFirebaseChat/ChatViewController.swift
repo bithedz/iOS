@@ -17,6 +17,8 @@ class ChatViewController: JSQMessagesViewController {
     var messageRef: Firebase!
     var messages = [JSQMessage]()
     
+    
+    
     var userIsTypingRef: Firebase!
     var usersTypingQuery: FQuery!
     private var localTyping = false
