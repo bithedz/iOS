@@ -36,5 +36,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Roboto-Medium.ttf</string>
+		<string>Novecentosanswide-Medium.otf</string>
+		<string>Novecentosanswide-DemiBold.otf</string>
+	</array>
 </dict>
 </plist>
