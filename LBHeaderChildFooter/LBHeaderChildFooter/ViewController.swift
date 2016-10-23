@@ -66,6 +66,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         return 35
     }
+    
+    
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerCell = tableView.dequeueReusableCellWithIdentifier("headerCell") as! HeaderCell
